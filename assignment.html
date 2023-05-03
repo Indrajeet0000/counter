@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;   display: flex;
+            align-items: center;
+            justify-content: center; 
+           
+       
+        }
+        h1{
+            font-size: 50px;
+            text-decoration: underline;
+        }
+        .wrapper{
+            
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 0 5px black;
+      padding: 30px;
+      border-radius: 5px;
+    }
+    button {
+      padding: 5px 15px;
+      font-size: 50px;
+      font-weight: bold; text-transform: capitalize;        
+    } 
+   #dikhaoo{
+    font-size: 100px;   padding: 0px 50px;
+   }
+        
+    </style>
+</head>
+<body>
+    <section class="wrapper"> 
+        <h1>Counter</h1>
+        <div>
+            <button onclick="func()" id="jss">increment</button>
+            <span id="dikhaoo">0</span>
+            <button onclick="funcg()">decrement</button>
+        </div>
+        <button onclick="change()">reset</button>
+
+    </section>
+   
+
+
+    <script>
+        function func(){
+            // document.getElementById("jss");
+            const value = Number(dikhaoo.innerText);
+            i=1000;
+            if (value < i) {
+          dikhaoo.innerText = value +1;
+        } else {
+          alert("Negative value not allowed");
+        }
+      };
+
+
+      function funcg(){
+            // document.getElementById("jss");
+            const value = (dikhaoo.innerText);
+            i=0;
+            if (value > i) {
+          dikhaoo.innerText = value -1;
+        } else {
+          alert("Negative value are allowed");
+        }
+      };
+
+
+      function change(){
+        dikhaoo.innerText=0;
+        confirm("yes");
+     
+      }
+
+
+
+   
+        
+
+    </script>
+    
+</body>
+</html>
